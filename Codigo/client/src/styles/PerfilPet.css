@@ -1,0 +1,216 @@
+
+.image-container {
+  background-color: #F4BC54;
+  width: 83.8vw;
+  border-radius: 1rem;
+  height: 32rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.511);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 400px;
+  color: black;
+  position: relative;
+  top: -5vh;
+  margin: auto;
+}
+
+.icon-style {
+  font-size: 24px;
+}
+
+.info-section {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-family: Arial, sans-serif;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+.centralized-title {
+  text-align: center;
+  margin-bottom: 1rem; /* Adiciona um espaço abaixo do título */
+  margin-top: 1em;
+}
+.section-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.section-text {
+  margin-left: 1rem; /* Alinha o texto com o título */
+  font-size: 1rem; /* Tamanho do texto */
+}
+
+.info-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1rem;
+  width: 100%; /* Aumente a largura do info-box */
+  max-width: 800px; /* Defina uma largura máxima para telas grandes */
+  margin: 1rem auto; /* Centraliza o box horizontalmente */
+}
+.info-box.second-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.info-item {
+  padding: 1rem;
+  min-width: 2rem;
+  text-align: center;
+  background-color: #FFF3E0;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  
+}
+
+.info-value {
+  color: rgb(50, 49, 49);
+}
+
+.tags-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tag {
+  padding: 5px 10px;
+  border: 1px solid #FFB74D;
+  border-radius: 20px;
+  background-color: #FFF8E1;
+}
+
+.teste {
+  overflow-y: auto !important;
+}
+
+* {
+  overflow-y: auto;
+}
+.dog-card input{
+  background-color: #FFF3E0; /* Mesma cor do item */
+  border: 1px solid #FF9800; /* Borda mais escura */
+  color: black;
+}
+.dog-card select{
+  background-color: #FFF3E0; /* Mesma cor do item */
+  border: 1px solid #FF9800; /* Borda mais escura */
+  color: black;
+}
+/* Estilizando os inputs para se adequar à caixa com borda mais escura */
+.info-item input {
+    width: 90%; /* Garante que o input não ultrapasse o tamanho da caixa */
+    padding: 0.5rem;
+    background-color: #FFF3E0; /* Mesma cor do item */
+    border: 1px solid #FF9800; /* Borda mais escura */
+    color: black; /* Mesma cor do texto */
+    font-size: 1rem;
+    text-align: center; /* Centraliza o texto */
+    outline: none; /* Remove o outline ao clicar */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  .info-item select {
+    width: 100%; /* Garante que o input não ultrapasse o tamanho da caixa */
+    padding: 0.5rem;
+    background-color: #FFF3E0; /* Mesma cor do item */
+    border: 1px solid #FF9800; /* Borda mais escura */
+    color: black;/* Mesma cor do texto */
+    font-size: 1rem;
+    text-align: center; /* Centraliza o texto */
+    outline: none; /* Remove o outline ao clicar */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  
+  /* Estilizando os textareas */
+  .info-item textarea {
+    width: 100%; /* Garante que o textarea não ultrapasse o tamanho da caixa */
+    padding: 0.5rem;
+    background-color: #FFF3E0; /* Mesma cor do item */
+    border: 1px solid #FF9800; /* Borda mais escura */
+    color: #FFB74D; /* Mesma cor do texto */
+    font-size: 1rem;
+    resize: none; /* Evita redimensionamento do textarea */
+    outline: none; /* Remove o outline ao clicar */
+    border-radius: 8px; /* Bordas arredondadas */ 
+  }
+  
+  /* Adicionando um estilo de hover para inputs e textareas */
+  .info-item input:hover, 
+  .info-item textarea:hover {
+    border-color: #E65100; /* Borda um pouco mais escura ao passar o mouse */
+  }
+  
+  /* Para ajustar o textarea do histórico e comportamento */
+  textarea {
+    width: 95%; 
+    height: 100px; /* Define uma altura padrão para o textarea */
+    background-color: #FFF3E0;
+    border: 1px solid #FF9800; /* Borda mais escura */
+    color: black; /* Mesma cor do texto */
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 1em;
+  }
+
+ 
+  .edit-button-container {
+    position: relative;
+    margin-top: -2rem; /* Ajusta a distância entre o botão e o card */
+    display: flex;
+    justify-content: flex-end; /* Posiciona o botão à direita */
+  } 
+  .button-containerr {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    margin-top: -4vw;
+  }
+.buttonAdotar{
+  width: 200px;
+  background-color: #04448B;
+  font-size: medium;
+  height: 2.6vw;
+}
+
+.buttonAdotar:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+.custom-button {
+  font-size: 14px; /* Diminuindo o tamanho da fonte */
+  color: white; /* Cor da fonte branca */
+  background-color: #04448B; /* Cor de fundo especificada */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 8px 12px; /* Ajusta o espaçamento interno do botão */
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Animação para a mudança de cor */
+  width: 14vw;
+}
+
+.custom-button:hover {
+  background-color: rgb(10, 40, 80); /* Muda a cor ao passar o mouse (opcional) */
+}

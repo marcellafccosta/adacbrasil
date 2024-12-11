@@ -1,0 +1,46 @@
+* {
+  overflow: hidden !important;
+}
+
+.pet-card {
+  border-radius: 15px;
+  border: 2px solid black;
+  border: 2px solid rgba(8, 28, 68, 0.8);
+}
+
+.pet-card:hover {
+  transform: scale(1);
+}
+
+.pets-botao {
+  width: 16rem;
+  background-color: #04448B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: small;
+  margin-left: auto;
+}
+
+
+.pet-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.511);
+}
+
+.female-icon {
+  background-color: rgb(126, 13, 109);
+}
+
+.male-icon {
+  background-color: rgb(8, 28, 68);
+}
+
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+:where(.css-dev-only-do-not-override-ccdg5a).ant-pagination .ant-pagination-next .ant-pagination-item-link {
+  margin: 0 auto;
+}

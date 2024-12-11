@@ -1,0 +1,248 @@
+FeedbackSection.css
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.novo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Formulário de feedback */
+.feedback-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-form textarea,
+.feedback-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .feedback-form button {
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+  }
+}
+
+.feedback-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo dos cartões de depoimento */
+.testimonial-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 80%; /* Allow the card to be more flexible */
+    min-width: unset; /* Remove any fixed minimum width */
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 65%;
+    min-width: unset; /* Remove a largura mínima em telas pequenas */
+    margin: 10px 0;
+  }
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  overflow-y: auto; /* Adiciona rolagem vertical caso o conteúdo ultrapasse o limite do cartão */
+}
+
+.testimonial-author {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Estilo dos botões de login e cadastro */
+.botao-login,
+.botao-cadastro,
+.feedback-button,
+.botaoFeedback {
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 12rem;
+  transition: background-color 0.3s ease;
+  font-size: small;
+}
+
+.botao-cadastro {
+  background-color: #041E41;
+}
+
+.feedback-button {
+  background-color: #04448B;
+  width: 14rem;
+  margin-top: 3.2rem;
+  margin: 0 auto;
+
+}
+
+.botaoFeedback {
+  background-color: #04448B;
+  width: 16rem;
+  margin-left: 6.2rem;
+}
+
+.feedback-button:hover,
+.botaoFeedback:hover,
+.botao-login:hover,
+.botao-cadastro:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  /* Botões em telas pequenas ocupam toda a largura */
+  .botao-login,
+  .botao-cadastro,
+  .feedback-button,
+  .botaoFeedback {
+    width: 80%; 
+    margin: 0 auto;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .pagination-container {
+    margin: 10px 0; 
+  }
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  min-height: 300px;
+  flex-direction: column;
+}
+
+.depoimentos, .testimonials-heading-underline {
+  margin-left: 5rem;
+}
+
+.testimonials, .testimonials-grid {
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .testimonials, .testimonials-grid {
+    gap: 15px; 
+  }
+}
+
+
+.cardss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.empty-card {
+  visibility: hidden;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .empty-card {
+    visibility: visible;
+  }
+}
+
+.testimonials-heading {
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .testimonials-heading {
+    padding-left: 0;
+    text-align: center; 
+  }
+}
+
+
+.ant-modal-body {
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .ant-modal-body {
+    padding: 10px; 
+  }
+}

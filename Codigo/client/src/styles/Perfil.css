@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.perfil-container {
+    margin: 0 auto;
+    padding: 20px;
+    overflow: scroll;
+}
+
+
+.perfil-container .ant-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-container .ant-card-body {
+    padding: 20px;
+}
+
+.perfil-container .ant-card h3 {
+    margin-bottom: 12px;
+}
+
+.perfil-container p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.perfil-container p strong {
+    color: #595959;
+}
+
+.perfil-container .ant-row {
+    margin-bottom: 16px;
+}
+
+.perfil-container .ant-card-title {
+    font-weight: bold;
+}
+
+.ant-card-bordered {
+    border: none;
+}
+
+.ant-input[disabled] {
+    color: rgba(0, 0, 0, 0.682);
+}
+
+.container-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoDelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoSalvar,
+.botaoEditar,
+.botaoVolunt {
+    width: 16rem;
+    background-color: #04448B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: small;
+}
+
+.botaoDeletar {
+    width: 16rem;
+    background-color: #8b0404;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: small;
+}
+
+
+.voluntario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.perfil-container {
+    height: calc(100vh - 64px);
+    overflow: auto;
+    padding: 16px;
+}
+
+.card-container {
+    max-height: 100%;
+    overflow: auto;
+}
+
+.ant-card {
+    height: 100%;
+}

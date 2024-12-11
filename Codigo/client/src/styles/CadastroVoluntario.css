@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.cadastro-container {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 20rem;
+    background-color: #f0f0f0;
+    
+}
+
+
+.icon-voltar {
+    cursor: pointer;
+}
+
+.botaoEnviar {
+    width: 16rem;
+    background-color: #04448B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.botaoEnviar:hover {
+    background-color: #033d7a;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
