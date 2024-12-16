@@ -32,7 +32,7 @@ const PetPerfil = () => {
   useEffect(() => {
     const fetchPet = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/api/pet/${id}`);
+        const response = await fetch(`https://ongadac-server-flax.vercel.app/api/pet/${id}`);
         if (!response.ok) {
           throw new Error("Erro ao buscar os detalhes do pet");
         }
@@ -64,7 +64,7 @@ const PetPerfil = () => {
 
   const handleConfirmDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/pet/${id}`, {
+      const response = await fetch(`https://ongadac-server-flax.vercel.app/api/pet/${id}`, {
         method: "DELETE",
       });
       if (response.ok) {
@@ -117,7 +117,7 @@ const PetPerfil = () => {
         idade: Math.round(idadeParaSalvar), // Adiciona a unidade ao salvar
       };
 
-      const response = await fetch(`http://localhost:3001/api/pet/${id}`, {
+      const response = await fetch(`https://ongadac-server-flax.vercel.app/api/pet/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -174,7 +174,7 @@ const PetPerfil = () => {
         <div className="image-container">
           <img
             width={500}
-            src={`http://localhost:3001/${formData.img.replace(/\\/g, "/")}`}
+            src={`https://ongadac-server-flax.vercel.app/${formData.img.replace(/\\/g, "/")}`}
             alt={formData.nome}
           />
         </div>

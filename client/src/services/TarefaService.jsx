@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/api/tarefa";
+const API_URL = "https://ongadac-server-flax.vercel.app/api/tarefa";
 
 export const TarefaService = {
   async addTarefa(novaTarefa, usuariosIds) {
@@ -62,7 +62,7 @@ export const TarefaService = {
 
   async fetchUsuarios() {
     try {
-      const response = await fetch("http://localhost:3001/api/usuario");
+      const response = await fetch("https://ongadac-server-flax.vercel.app/api/usuario");
       if (!response.ok) {
         throw new Error("Erro ao buscar usuários");
       }

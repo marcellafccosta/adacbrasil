@@ -24,7 +24,7 @@ const AddPatrocinioModal = ({ isVisible, onClose, onSuccess }) => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/patrocinio', {
+            const response = await fetch('https://ongadac-server-flax.vercel.app/api/patrocinio', {
                 method: 'POST',
                 body: formDataToSend,
             });

@@ -16,7 +16,7 @@ const Patrocinio = () => {
     useEffect(() => {
         async function fetchPatrocinios() {
             try {
-                const response = await fetch("http://localhost:3001/api/patrocinio", {
+                const response = await fetch("https://ongadac-server-flax.vercel.app/api/patrocinio", {
                     method: 'GET',
                 });
                 if (response.ok) {
@@ -65,8 +65,8 @@ const Patrocinio = () => {
 
         try {
             const url = currentPatrocinio
-                ? `http://localhost:3001/api/patrocinio/${currentPatrocinio.id}`
-                : 'http://localhost:3001/api/patrocinio';
+                ? `https://ongadac-server-flax.vercel.app/api/patrocinio/${currentPatrocinio.id}`
+                : 'https://ongadac-server-flax.vercel.app/api/patrocinio';
 
             const method = currentPatrocinio ? 'PUT' : 'POST';
 
@@ -100,7 +100,7 @@ const Patrocinio = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3001/api/patrocinio/${id}`, {
+            const response = await fetch(`https://ongadac-server-flax.vercel.app/api/patrocinio/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {

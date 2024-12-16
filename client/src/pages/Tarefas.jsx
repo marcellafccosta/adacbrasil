@@ -13,7 +13,7 @@ const Tarefas = () => {
   useEffect(() => {
     async function fetchTarefas() {
       try {
-        const response = await fetch("http://localhost:3001/api/tarefa");
+        const response = await fetch("https://ongadac-server-flax.vercel.app/api/tarefa");
         if (response.ok) {
           const data = await response.json();
           const tarefasIdString = data.map((tarefa) => ({
@@ -60,7 +60,7 @@ const Tarefas = () => {
 
   async function handleStatusUpdate(tarefaId, newStatus) {
     try {
-      const response = await fetch(`http://localhost:3001/api/tarefa/${tarefaId}/status`, {
+      const response = await fetch(`https://ongadac-server-flax.vercel.app/api/tarefa/${tarefaId}/status`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: newStatus }),
@@ -84,7 +84,7 @@ const Tarefas = () => {
     console.log(JSON.stringify(tarefasAtualizadas));
 
     try {
-      const response = await fetch("http://localhost:3001/api/tarefa/update-ordem", {
+      const response = await fetch("https://ongadac-server-flax.vercel.app/api/tarefa/update-ordem", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(tarefasAtualizadas),

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/eventos';
+const API_URL = 'https://ongadac-server-flax.vercel.app/api/eventos';
 
 class EventoService {
 

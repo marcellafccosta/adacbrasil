@@ -71,7 +71,7 @@ const Column = ({ title, tarefas, setTarefas, status }) => {
     console.log(novaTarefa);
 
     try {
-      const response = await fetch("http://localhost:3000/api/tarefa", {
+      const response = await fetch("https://ongadac-server-flax.vercel.app/api/tarefa", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -124,7 +124,7 @@ const Column = ({ title, tarefas, setTarefas, status }) => {
       // console.log(tarefaToUpdate.usuariosSelecionado)
 
       const response = await fetch(
-        `http://localhost:3000/api/tarefa/${tarefaToUpdate.id}`,
+        `https://ongadac-server-flax.vercel.app/api/tarefa/${tarefaToUpdate.id}`,
         {
           method: "PUT",
           headers: {
@@ -158,7 +158,7 @@ const Column = ({ title, tarefas, setTarefas, status }) => {
   const handleFormDelete = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/tarefa/${tarefaToDelete.id}`,
+        `https://ongadac-server-flax.vercel.app/api/tarefa/${tarefaToDelete.id}`,
         {
           method: "DELETE",
         }
@@ -180,7 +180,7 @@ const Column = ({ title, tarefas, setTarefas, status }) => {
   useEffect(() => {
     async function fetchUsers() {
       try {
-        const response = await fetch("http://localhost:3000/api/usuario");
+        const response = await fetch("https://ongadac-server-flax.vercel.app/api/usuario");
         if (response.ok) {
           const data = await response.json();
           setUsuarios(data);

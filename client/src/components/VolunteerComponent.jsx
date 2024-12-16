@@ -18,7 +18,7 @@ const VolunteerComponent = ({ searchText }) => {
     useEffect(() => {
         const fetchVoluntarios = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/usuario/voluntarios');
+                const response = await axios.get('https://ongadac-server-flax.vercel.app/api/usuario/voluntarios');
                 setVoluntarios(response.data);
                 setFilteredVolunteers(response.data);
                 setLoading(false);
@@ -34,7 +34,7 @@ const VolunteerComponent = ({ searchText }) => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:3000/api/usuario/${id}/voluntario`);
+            await axios.delete(`https://ongadac-server-flax.vercel.app/api/usuario/${id}/voluntario`);
             setVoluntarios((prevVoluntarios) =>
                 prevVoluntarios.filter((voluntario) => voluntario.id !== id)
             );

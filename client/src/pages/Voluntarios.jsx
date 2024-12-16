@@ -27,20 +27,4 @@ const Voluntarios = () => {
     );
 }    
 
-
-/*
- <div style={{ display: "flex" }}>
-            <Menu />
-            <div style={{ flex: 1, padding: "1rem" }}>
-                <div style={{ display: "flex" }}>
-                    <Header headerName={'Patrocínios'} />
-
-                    <Button className="patrocinio-botao" type="primary" onClick={() => handleOpenModal()}>
-                        Novo Patrocínio
-                    </Button>
-                </div>
-                <Divider />
-
-*/
-
 export default Voluntarios;

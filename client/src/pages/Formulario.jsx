@@ -71,7 +71,7 @@ const Formulario = () => {
       try {
         // Buscar dados do pet
         if (petId) {
-          const petResponse = await fetch(`http://localhost:3001/api/pet/${petId}`);
+          const petResponse = await fetch(`https://ongadac-server-flax.vercel.app/api/pet/${petId}`);
           if (petResponse.ok) {
             const pet = await petResponse.json();
             setFormData((prev) => ({
@@ -86,7 +86,7 @@ const Formulario = () => {
 
         // Buscar dados do usuário
         if (usuarioId) {
-          const userResponse = await fetch(`http://localhost:3001/api/usuario/${usuarioId}`);
+          const userResponse = await fetch(`https://ongadac-server-flax.vercel.app/api/usuario/${usuarioId}`);
           if (userResponse.ok) {
             const user = await userResponse.json();
             setUsuario(user);
@@ -247,7 +247,7 @@ const Formulario = () => {
 
     try {
       console.log('Dados enviados:', data); // Log para verificar os dados
-      const response = await fetch('http://localhost:3001/api/adocao/', {
+      const response = await fetch('https://ongadac-server-flax.vercel.app/api/adocao/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

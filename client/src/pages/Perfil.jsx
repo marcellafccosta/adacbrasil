@@ -45,7 +45,7 @@ const Perfil = () => {
    useEffect(() => {
       const fetchUserData = async () => {
          try {
-            const response = await fetch(`http://localhost:3001/api/usuario/${id}`);
+            const response = await fetch(`https://ongadac-server-flax.vercel.app/api/usuario/${id}`);
             const data = await response.json();
             console.log('Dados do usuário:', data);
             setUserData(data || {});
@@ -86,7 +86,7 @@ const Perfil = () => {
 
          console.log('Dados atualizados para enviar:', updatedData);
 
-         const response = await fetch(`http://localhost:3001/api/usuario/${id}`, {
+         const response = await fetch(`https://ongadac-server-flax.vercel.app/api/usuario/${id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedData),
@@ -112,7 +112,7 @@ const Perfil = () => {
 
    const handleConfirmDelete = async () => {
       try {
-         const response = await fetch(`http://localhost:3001/api/usuario/${id}`, {
+         const response = await fetch(`https://ongadac-server-flax.vercel.app/api/usuario/${id}`, {
             method: 'DELETE',
          });
          if (response.ok) {

@@ -32,7 +32,7 @@ const Pets = () => {
   useEffect(() => {
     const fetchPets = async () => {
       try {
-        const response = await fetch("http://localhost:3001/api/pet");
+        const response = await fetch("https://ongadac-server-flax.vercel.app/api/pet");
         if (!response.ok) {
           throw new Error("Erro ao buscar os pets");
         }
@@ -117,7 +117,7 @@ const Pets = () => {
                     cover={
                       <div>
                         <img
-                          src={`http://localhost:3001/${pet.img}`}
+                          src={`https://ongadac-server-flax.vercel.app/${pet.img}`}
                           alt={pet.nome}
                           style={{ height: "200px", width: "100%", objectFit: "contain", marginTop: "1vw" }}
                         />

@@ -33,7 +33,7 @@ const HistoricoAdocao = () => {
 
     const fetchPetById = async (petId) => {
         try {
-            const response = await fetch(`http://localhost:3001/api/pet/${petId}`);
+            const response = await fetch(`https://ongadac-server-flax.vercel.app/api/pet/${petId}`);
             if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
             const petData = await response.json();
             return petData.nome;
@@ -45,7 +45,7 @@ const HistoricoAdocao = () => {
 
     const fetchAdotanteById = async (usuarioId) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/usuario/${usuarioId}`);
+            const response = await fetch(`https://ongadac-server-flax.vercel.app/api/usuario/${usuarioId}`);
             if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
             const adotanteData = await response.json();
             return adotanteData.nome;
@@ -65,8 +65,8 @@ const HistoricoAdocao = () => {
 
             try {
                 const response = isAdmin
-                    ? await fetch('http://localhost:3001/api/adocao/')
-                    : await fetch(`http://localhost:3001/api/adocao/usuario/${userLoggedIn.id}`);
+                    ? await fetch('https://ongadac-server-flax.vercel.app/api/adocao/')
+                    : await fetch(`https://ongadac-server-flax.vercel.app/api/adocao/usuario/${userLoggedIn.id}`);
 
                 if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
 
@@ -119,7 +119,7 @@ const HistoricoAdocao = () => {
         if (!selectedAdocao) return;
 
         try {
-            const response = await fetch(`http://localhost:3001/api/adocao/${selectedAdocao.id}`, {
+            const response = await fetch(`https://ongadac-server-flax.vercel.app/api/adocao/${selectedAdocao.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

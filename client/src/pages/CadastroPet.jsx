@@ -96,7 +96,7 @@ const CadastroPet = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/pet', {
+            const response = await fetch('https://ongadac-server-flax.vercel.app/api/pet', {
                 method: 'POST',
                 body: formDataToSend,
             });
