@@ -55,7 +55,6 @@ const Login = () => {
                             <Form.Item
                                 label="E-mail"
                                 name="email"
-                                
                                 rules={[
                                     { type: 'email', message: 'O e-mail inserido não é válido!' },
                                     { required: true, message: 'Por favor, insira seu e-mail!' },
@@ -63,10 +62,7 @@ const Login = () => {
                                 className="register_email_help"
                                 style={{ width: '100rem !important' }}
                             >
-                                <Input
-                                    id="email"
-                                    onChange={(e) => handleChange('email', e.target.value)}
-                                />
+                                <Input id="email" />
                             </Form.Item>
                         </Col>
                     </Row>
@@ -79,10 +75,7 @@ const Login = () => {
                                 rules={[{ required: true, message: 'Por favor, insira sua senha!' }]}
                                 hasFeedback
                             >
-                                <Input.Password
-                                    id="senha"
-                                    onChange={(e) => handleChange('senha', e.target.value)}
-                                />
+                                <Input.Password id="senha" />
                             </Form.Item>
                         </Col>
                     </Row>
@@ -96,11 +89,11 @@ const Login = () => {
                                 <Link to="/Cadastro">
                                     <span style={{ fontWeight: 'bold', color: '#1890ff', marginLeft: '5px' }}> Cadastre-se </span>
                                 </Link>
-                                <span style={{margin: '2.4px'}}> | </span>
-                                <Link to="/recover-password" style={{ color: '#FF743C', fontWeight: 'bold'}}> Esqueceu sua senha?</Link>
+                                <span style={{ margin: '2.4px' }}> | </span>
+                                <Link to="/recover-password" style={{ color: '#FF743C', fontWeight: 'bold' }}> Esqueceu sua senha?</Link>
                             </p>
                         </div>
-                        
+
                     </Form.Item>
                 </Form>
             </div>
