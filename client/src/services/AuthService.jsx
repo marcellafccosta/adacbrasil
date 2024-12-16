@@ -5,17 +5,17 @@ const API_URL = 'https://ongadac-server-flax.vercel.app/api';
 class AuthService {
 
     async login(email, senha) {
-        try {
-            const response = await axios.post(`${API_URL}/auth/login`, { email, senha });
-            if (response.data.token) {
-                localStorage.setItem('token', response.data.token); // Store token
-                localStorage.setItem('user', JSON.stringify(response.data.user)); // Store user
-                return response.data;
-            }
-        } catch (error) {
-            console.error("Login error: ", error.response ? error.response.data : error.message);
-            throw error; // Re-throw the error after logging it
-        }
+        return axios.post(`${API_URL}/auth/login`, { email, senha })
+            .then(response => {
+                if (response.data.token) {
+                    localStorage.setItem('token', response.data.token); // Armazena o token separadamente
+                    localStorage.setItem('user', JSON.stringify(response.data.user)); // Armazena o usuário
+                    return response.data;
+                }
+            })
+            .catch(error => {   
+                throw error;
+            });
     }
 
     logout() {
