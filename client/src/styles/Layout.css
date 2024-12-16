@@ -1,0 +1,33 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita que o body tenha rolagem */
+}
+
+.ant-layout {
+  height: 100%;
+  display: flex;
+}
+
+.ant-layout-sider {
+  width: 200px;
+  position: fixed; /* Faz o menu lateral acompanhar a rolagem */
+  height: 100%;
+  background-color: #001529; /* Cor de fundo do menu, ajuste conforme necessário */
+  overflow: auto; /* Adiciona rolagem ao menu, caso tenha muito conteúdo */
+}
+
+.ant-layout-content {
+  margin-left: 200px; /* Espaço para o conteúdo ao lado do menu fixo */
+  padding: 24px;
+  height: calc(100vh - 50px); /* Altura dinâmica para evitar overflow */
+  overflow-y: auto; /* Permite rolar o conteúdo */
+  background-color: #fff;
+}
+
+.logo {
+  height: 50px;
+  display: block;
+  margin: 16px auto;
+}

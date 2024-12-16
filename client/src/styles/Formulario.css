@@ -1,0 +1,81 @@
+/* Formulário CSS */
+
+.page-2 .form-group {
+    background-color: red;
+  }
+  
+  .page-1 .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .page-1 .form-group label {
+    margin-right: 0.5rem;
+    font-size: 1.5rem; /* Ajuste o tamanho do ícone conforme necessário */
+  }
+  
+  .page-1 .form-group input {
+    flex: 1; /* Faz o input preencher o restante do espaço */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input,
+  select {
+    background-color: #cecfcf; /* Cor de fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 8px; /* Espaçamento interno */
+    display: block; /* Faz o elemento ocupar a largura total disponível */
+    margin: 0; /* Remove margens */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    color: #000000b0;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+  }
+  
+  /* Style adjustments for the filled effect */
+.ant-select-selector {
+  background-color: #F0F2F5 !important; /* Light gray background to match filled style */
+}
+
+
+
+  .page-1, .page-2, .page-3, .page-4, .page-5, .page-6, .page-7, .page-8, .page-9, .page-10, .page-11 {
+    margin-bottom: 30px;
+  }
+  
+
+  .formulario-container {
+    position: relative; /* adiciona uma posição relativa ao container */
+    margin-left: 13%; /* adiciona uma margem esquerda de 200px */
+    
+  }
+  
+  .page-title {
+    position: absolute; /* posiciona os títulos absolutamente */
+    top: 20px; /* mantém os títulos 20px do topo */
+    left: 10.5%; /* centraliza os títulos horizontalmente */
+    transform: translateX(-50%); /* ajusta a posição horizontal */
+    z-index: 1; /* garante que os títulos fiquem em frente ao resto da página */
+    font-size: 24px; /* ajusta o tamanho da fonte */
+    font-weight: bold; /* ajusta o peso da fonte */
+    color: #333; /* ajusta a cor da fonte */
+  }
+  
+  .formulario {
+    padding-top: 60px; /* adiciona um espaçamento superior para compensar a posição dos títulos */
+
+  }
+
+  .campos {
+    padding-bottom: 1rem;
+    overflow-y: hidden !important;
+  }
+
+  

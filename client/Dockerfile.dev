@@ -1,0 +1,23 @@
+# Use uma imagem base com Node.js
+FROM node:18
+
+# Defina o diretório de trabalho
+WORKDIR /src
+
+# Copie os arquivos de configuração do npm
+COPY package*.json ./
+
+# Instale as dependências
+RUN npm install
+
+# Copie todo o restante do código do projeto
+COPY . .
+
+# Compile a aplicação (por exemplo, `npm run build` para produção)
+RUN npm run build
+
+# Exponha a porta que o servidor vai usar
+EXPOSE 3000
+
+# Comando para iniciar a aplicação (por exemplo, para produção)
+CMD ["npm", "run", "dev"]

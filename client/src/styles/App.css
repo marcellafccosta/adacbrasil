@@ -1,0 +1,37 @@
+*{
+  overflow-y: auto !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #04448B;
+  color: white;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  overflow-y: auto;
+}
+

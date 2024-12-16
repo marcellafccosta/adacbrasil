@@ -1,0 +1,19 @@
+.header-container {
+    width: 100%;
+    padding-left: 1rem; 
+    padding-top: 1rem;
+    color: white; /* Cor do texto */
+    display: flex;
+    flex-direction: row; /* Título e linha na vertical */
+    align-items: flex-start; /* Alinha o título à esquerda */
+  }
+  
+
+  
+  .header-divider {
+    border: none; /* Remove a borda padrão */
+    height: 2px; /* Aumenta a altura da linha */
+    background-color: rgba(109, 106, 106, 0.5); /* Linha branca semi-transparente */
+    margin-top: 0.5rem; /* Espaçamento acima da linha */
+  }
+  

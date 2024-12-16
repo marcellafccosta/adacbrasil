@@ -1,0 +1,50 @@
+/* styles/ListEventModal.css */
+.list-event-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    transition: transform 0.3s ease-in;
+    overflow-y: auto;
+    padding-bottom: 0px !important;
+}
+
+.list-event-modal .ant-modal-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-event-modal .ant-modal-body {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.slide-right-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.slide-right-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 300ms, opacity 300ms;
+}
+
+.slide-right-exit {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-right-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 300ms, opacity 300ms;
+}
+
+.btn-conteiner{
+    position: absolute;
+    left: 25rem;
+    padding-left: 1rem;
+}

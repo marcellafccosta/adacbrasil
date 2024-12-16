@@ -1,0 +1,188 @@
+.patrocinio-container {
+  margin: 0 auto;
+  /* Centraliza a seção */
+  padding: 20px;
+  max-width: 1200px;
+  /* Limita a largura máxima */
+}
+
+.patrocinio-header {
+  text-align: center;
+  /* Centraliza o título */
+  margin-bottom: 40px;
+}
+
+.patrocinio-botao {
+  width: 16rem;
+  background-color: #04448B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: small;
+  margin-left: auto;
+}
+
+
+.patrocinio-botao:hover {
+  background-color: #1e40af;
+
+}
+
+.patrocinio-header h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.patrocinio-header img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Grid de Patrocinadores */
+.patrocinio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  /* Aumenta o espaçamento entre os cards */
+  justify-content: center;
+  /* Garante que os cards fiquem centralizados */
+  padding: 10px;
+}
+
+/* Estilo dos Cards de Patrocinadores */
+.patrocinio-card {
+  flex: 0 0 calc(25% - 24px);
+  /* Tamanho do card ajustado para 4 por linha */
+  max-width: 250px;
+  /* Limita a largura do card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Efeito de transição para hover */
+}
+
+.patrocinio-card:hover {
+  transform: translateY(-5px);
+  /* Levanta o card ao passar o mouse */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  /* Aumenta a sombra no hover */
+}
+
+.testimonials-heading,
+.patrocinadores {
+  margin-left: 5rem;
+}
+
+.patrocinio-image {
+  width: 80px;
+  height: 80px;
+  /* Tamanho ideal para a imagem */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  /* Efeito de zoom na imagem */
+}
+
+.patrocinio-card:hover .patrocinio-image {
+  transform: scale(1.1);
+  /* Zoom suave na imagem */
+}
+
+.patrocinio-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Estilo para a mensagem de "sem dados" */
+.no-data-message {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.selecione-button{
+  width: 13rem;
+  background-color: #0960c5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: small;
+  border-radius: 8px;
+  margin: 0 auto;
+  
+}
+
+.cadastro-button {
+  width: 100%;
+  background-color: #04448B;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: small;
+  border-radius: 8px;
+  margin: 0 auto;
+
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .patrocinio-card {
+    flex: 0 0 calc(50% - 24px);
+    /* 2 cards por linha em telas pequenas */
+    max-width: 100%;
+    /* Ajusta o tamanho para ocupar toda a tela */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .patrocinio-name {
+    font-size: 0.9rem;
+    /* Ajusta o tamanho da fonte */
+  }
+
+  .patrocinio-image {
+    width: 60px;
+    height: 60px;
+    /* Ajusta o tamanho da imagem */
+  }
+}
+
+@media (max-width: 1024px) {
+  .patrocinio-card {
+    flex: 0 0 calc(33.33% - 24px);
+    /* 3 cards por linha em tablets */
+  }
+
+  .patrocinio-image {
+    width: 70px;
+    height: 70px;
+    /* Ajuste no tamanho da imagem */
+  }
+
+  .patrocinio-name {
+    font-size: 1rem;
+    /* Ajusta o tamanho da fonte */
+  }
+}

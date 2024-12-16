@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    margin: 0 auto; 
+  
+}
+
+.feedback-list h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #333;
+}
+
+.feedback-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.feedback-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-height: 20rem;
+}
+
+.feedback-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.feedback-author {
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.feedback-card Button {
+    display: flex;
+    margin: 0 auto;
+    /* width: 100%; */
+    color: #ffffff;
+}
+
+
+.no-feedback-message {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.ant-btn-color-dangerous.ant-btn-variant-outlined, 
+:where(.css-dev-only-do-not-override-ccdg5a).ant-btn-color-dangerous.ant-btn-variant-dashed {
+    background-color: #8b0404;
+    border-color: #8b0404;
+    transition: box-shadow 0.3s ease; /* Adicionando a transição */
+}
+
+.ant-btn-color-dangerous.ant-btn-variant-outlined:hover, 
+:where(.css-dev-only-do-not-override-ccdg5a).ant-btn-color-dangerous.ant-btn-variant-dashed:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Aplicando o hover */
+}
+
+/* Estilo para os cards de feedback */
+.feedback-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Transição suave para a sombra */
+}
+
+.feedback-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
+}
+
+.ant-pagination {
+    display: block;
+}
